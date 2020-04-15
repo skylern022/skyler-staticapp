@@ -8,15 +8,17 @@
 <div class="container">
   <div class="row">
     <div class="col">
-      <h1>Land ho!</h1>
-      <p>Welcome to my piratey blog!</p>
-      <p>Don't forget to like and subscribe ;)!</p>
-      <p>Hit the bell to receive notifcations for all my new posts!</p>
-          {% for entry in data.entries %}
-  <h3 class="entry-headline"><a href="{{ entry.url }}">{{ entry.title }}</a></h3>
-  <p class="entry-date">{{ entry.date }}</p>
-  <hr>
-{% endfor %}
+    <div class="col-md-5 offset-md-5">
+   <h1>Land ho!</h1>
+    <p>Welcome to my piratey blog!</p>
+     <p>Don't forget to like and subscribe ;)!</p>
+       <p>Hit the bell to receive notifcations for all my new posts!</p>
+       </div>
+              {% for entry in data.entries %}
+        <h3 class="entry-headline"><a href="{{ entry.url }}">{{ entry.title }}</a></h3>
+          <p class="entry-date">{{ entry.date }}</p>
+        <hr>
+    {% endfor %}
     </div>
   </div>
 </div>
